@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".ui.signup.SignupActivity">
+    <!--ScrollBar Code-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mSignupBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mHandshake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="-150dp"
+            android:src="@drawable/handshake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mSignupBack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mSignupBack"
+            app:srcCompat="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-140dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign up"
+            android:textColor="#000077"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mHandshake" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mEnterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Email"
+            android:maxLength="40"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/mSignup" />
+
+        <View
+            android:id="@+id/mViewEmail"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:background="#BCBCBC"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterEmail"
+            app:layout_constraintStart_toStartOf="@+id/mEnterEmail"
+            app:layout_constraintTop_toBottomOf="@+id/mEnterEmail" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mEnterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="16dp"
+            android:maxLength="16"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/mViewEmail" />
+
+        <View
+            android:id="@+id/mViewName"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:background="#BCBCBC"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterName"
+            app:layout_constraintStart_toStartOf="@+id/mEnterName"
+            app:layout_constraintTop_toBottomOf="@+id/mEnterName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mEnterMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Mobile"
+            android:maxLength="16"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@+id/mViewName" />
+
+        <View
+            android:id="@+id/mViewMobile"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:background="#BCBCBC"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterMobile"
+            app:layout_constraintStart_toStartOf="@+id/mEnterMobile"
+            app:layout_constraintTop_toBottomOf="@+id/mEnterMobile" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mEnterPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="16dp"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Password"
+            android:maxLength="16"
+            app:layout_constraintTop_toBottomOf="@+id/mViewMobile" />
+
+        <View
+            android:id="@+id/mViewPass"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:background="#BCBCBC"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterPass"
+            app:layout_constraintStart_toStartOf="@+id/mEnterPass"
+            app:layout_constraintTop_toBottomOf="@+id/mEnterPass" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mEnterConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="16dp"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Confirm Password"
+            app:layout_constraintTop_toBottomOf="@+id/mViewPass" />
+
+        <View
+            android:id="@+id/mViewConfirmPass"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="7dp"
+            android:background="#BCBCBC"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterConfirmPass"
+            app:layout_constraintStart_toStartOf="@+id/mEnterConfirmPass"
+            app:layout_constraintTop_toBottomOf="@+id/mEnterConfirmPass" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mContinueSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bg_login"
+            android:text="Continue"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/mViewConfirmPass" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mLogin22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/join_us_before_login"
+            android:textSize="16dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mContinueSignup" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mPass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/visibility_off"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/mEnterPass"
+            app:layout_constraintBottom_toBottomOf="@+id/mEnterPass"
+            app:layout_constraintTop_toTopOf="@+id/mEnterPass"
+            android:layout_marginEnd="16dp"
+            />
+
+           <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mPass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/visibility_off"
+               android:padding="10dp"
+               app:layout_constraintEnd_toEndOf="@+id/mEnterConfirmPass"
+            app:layout_constraintBottom_toBottomOf="@+id/mEnterConfirmPass"
+            app:layout_constraintTop_toTopOf="@+id/mEnterConfirmPass"
+            android:layout_marginEnd="16dp"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">APIUI</string>
+    <string name="join_us_before_login">Join us before? <font color = "#000088">Login</font></string>
+    <string name="new_to_logistics_register">New to Logistics? <font color = "#000077">Register</font></string>
+</resources>
